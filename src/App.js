@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Home, Posts } from './components';
 
-const Home=() => (
-  <div>
-    <h1>Welcome to the NamVL Website!</h1>
-  </div>
-)
 const About=()=>(
   <div>
     <h1>Welcome to the About page!</h1>
@@ -21,7 +17,7 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Home}/>
             <Route path="/about/" component={About} />
-            <Route path="/posts" render={() => <h1>Posts</h1>} />
+            <Route path="/posts" component={Posts} />
           </div>
         </Switch>
       </Router>

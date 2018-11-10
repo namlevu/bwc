@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
+import slugify from 'slugify';
 
 import Input from "../../presentational/Input";
 
@@ -11,7 +12,8 @@ class NewPost extends Component {
       slug:"",
       tags:"",
       content:"",
-      author_id:""
+      author_id:"",
+      created_by:""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,19 +25,20 @@ class NewPost extends Component {
     event.preventDefault();
     const post = {
       title: this.state.title,
-      slug: this.state.slug,
-      tags: this.state.tags,
+      slug: slugify(this.state.title),
+      tags: this.state.tags.split(","),
       content: this.state.content,
-      author_id: this.state.author_id
+      author_id: this.state.author_id,
+      created_by: this.state.author_id
     };
     console.log(post);
-    /*
-    axios.post(`http://127.0.0.1:9009/v1/posts`, { post })
+    /**/
+    axios.post(`http://127.0.0.1:9009/v1/posts`, post)
       .then(res => {
         console.log(res);
         console.log(res.data);
       })
-      */
+    /**/
   }
 
   render() {
@@ -48,14 +51,6 @@ class NewPost extends Component {
           type="text"
           id="title"
           value={title}
-          handleChange={this.handleChange}
-        />
-        <Input
-          text="Slug"
-          label="Slug"
-          type="hidden"
-          id="slug"
-          value={slug}
           handleChange={this.handleChange}
         />
         <Input

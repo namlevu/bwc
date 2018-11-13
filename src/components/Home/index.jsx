@@ -84,7 +84,7 @@ export default class Home extends React.Component {
             author={this.state.fakeArticles[3].author} />
           <div className="col-5">
             <div className="adv-title">
-              Dành cho quảng cáo
+              Có thể bạn quan tâm
             </div>
             <div className="">
               <img className="mb-2" src={this.state.fakeAdvs[0]} width="100%" />

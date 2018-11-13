@@ -49,10 +49,19 @@ $font-family-BungeeInline: 'Bungee Inline', cursive;
 $font-family-BungeeShade: 'Bungee Shade', cursive;
 $font-family-BungeeOutline: 'Bungee Outline', cursive;
 
-body {
-  font-family: $font-family-Roboto;
-}
+$l-color: #0e3f4c;
+$v-color: #ffd400;
+$v-n-color: #e8e6d0;
+$d-d-color: #a84231;
+$x-b-color: #308ca9;
 
+body {
+  font-family: $font-family-MPLUS1p;
+  //background: $v-n-color;
+}
+body a {
+  //color: $d-d-color;
+}
 .header {
   font-family: $font-family-RobotoSlab;
   border-bottom: solid 1px grey;
@@ -66,6 +75,8 @@ body {
   border-top: solid 1px grey;
   text-align: center;
   font-size: 10pt;
+  background: $l-color;
+  color: $v-color;
 }
 
 .menu-item {
@@ -90,4 +101,13 @@ body {
 
 .article-md-author a {
   color: darkgrey;
+}
+
+.article-lg-top {
+  text-align: center;
+}
+.article-lg-title {
+  font-size: 26pt;
+  font-weight: bold;
+  text-align: center;
 }

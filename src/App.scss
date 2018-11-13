@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Alfa+Slab+One|Amatic+SC|Anton|Archivo|Arimo|Asap|Bangers|Bungee+Inline|Bungee+Outline|Bungee+Shade|Cabin+Condensed|Chakra+Petch|Comfortaa|Dancing+Script|Encode+Sans+Condensed|Exo|Fira+Sans|Inconsolata|Josefin+Sans|K2D|Kanit|KoHo|Lobster|Lora|M+PLUS+1p|M+PLUS+Rounded+1c|Maven+Pro|Merriweather|Montserrat|Muli|Niramit|Noto+Sans|Nunito|Nunito+Sans|Open+Sans|Open+Sans+Condensed:300|Oswald|Pacifico|Play|Playfair+Display|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Source+Sans+Pro|Varela+Round|Yanone+Kaffeesatz');
+
+$font-family-Roboto: 'Roboto', sans-serif;
+$font-family-Archivo: 'Archivo', sans-serif;
+$font-family-OpenSans: 'Open Sans', sans-serif;
+$font-family-MPLUS1p: 'M PLUS 1p', sans-serif;
+$font-family-Montserrat: 'Montserrat', sans-serif;
+$font-family-KoHo: 'KoHo', sans-serif;
+$font-family-RobotoCondensed: 'Roboto Condensed', sans-serif;
+$font-family-Oswald: 'Oswald', sans-serif;
+$font-family-SourceSansPro: 'Source Sans Pro', sans-serif;
+$font-family-Niramit: 'Niramit', sans-serif;
+$font-family-NotoSans: 'Noto Sans', sans-serif;
+$font-family-Merriweather: 'Merriweather', serif;
+$font-family-RobotoSlab: 'Roboto Slab', serif;
+$font-family-OpenSansCondensed: 'Open Sans Condensed', sans-serif;
+$font-family-PlayfairDisplay: 'Playfair Display', serif;
+$font-family-RobotoMono: 'Roboto Mono', monospace;
+$font-family-Lora: 'Lora', serif;
+$font-family-Muli: 'Muli', sans-serif;
+$font-family-Nunito: 'Nunito', sans-serif;
+$font-family-Arimo: 'Arimo', sans-serif;
+$font-family-FiraSans: 'Fira Sans', sans-serif;
+$font-family-Inconsolata: 'Inconsolata', monospace;
+$font-family-MPLUSRounded1c: 'M PLUS Rounded 1c', sans-serif;
+$font-family-Anton: 'Anton', sans-serif;
+$font-family-JosefinSans: 'Josefin Sans', sans-serif;
+$font-family-NunitoSans: 'Nunito Sans', sans-serif;
+$font-family-Lobster: 'Lobster', cursive;
+$font-family-Pacifico: 'Pacifico', cursive;
+$font-family-VarelaRound: 'Varela Round', sans-serif;
+$font-family-YanoneKaffeesatz: 'Yanone Kaffeesatz', sans-serif;
+$font-family-DancingScript: 'Dancing Script', cursive;
+$font-family-Asap: 'Asap', sans-serif;
+$font-family-Exo: 'Exo', sans-serif;
+$font-family-EncodeSansCondensed: 'Encode Sans Condensed', sans-serif;
+$font-family-AmaticSC: 'Amatic SC', cursive;
+$font-family-Comfortaa: 'Comfortaa', cursive;
+$font-family-Kanit: 'Kanit', sans-serif;
+$font-family-MavenPr: 'Maven Pro', sans-serif;
+$font-family-Play: 'Play', sans-serif;
+$font-family-K2D: 'K2D', sans-serif;
+$font-family-AlegreyaSans: 'Alegreya Sans', sans-serif;
+$font-family-AlfaSlabOne: 'Alfa Slab One', cursive;
+$font-family-ChakraPetch: 'Chakra Petch', sans-serif;
+$font-family-CabinCondensed: 'Cabin Condensed', sans-serif;
+$font-family-Bangers: 'Bangers', cursive;
+$font-family-BungeeInline: 'Bungee Inline', cursive;
+$font-family-BungeeShade: 'Bungee Shade', cursive;
+$font-family-BungeeOutline: 'Bungee Outline', cursive;
+
 body {
-  background: grey;
+  font-family: $font-family-Roboto;
+}
+
+.header {
+  font-family: $font-family-RobotoSlab;
 }

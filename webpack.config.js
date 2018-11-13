@@ -22,6 +22,16 @@ module.exports = {
         })
       },
       {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'public/img/[hash].[ext]',
+            outputPath: 'dist/img/',
+          },
+        },
+      },
+      {
         test: /\.html$/,
         use: [{
           loader: "html-loader"

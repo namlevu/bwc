@@ -55,4 +55,32 @@ body {
 
 .header {
   font-family: $font-family-RobotoSlab;
+  border-bottom: solid 1px grey;
+  border-top: solid 1px grey;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu-item {
+  border-left: solid 1px grey;
+
+}
+
+.article-md {
+}
+.article-md-tag {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.article-md-title {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: justify;
+}
+.article-md-title a {
+  color: black;
+}
+
+.article-md-author a {
+  color: darkgrey;
 }

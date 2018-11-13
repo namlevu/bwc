@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Home, Posts } from './components';
-
-const About=()=>(
-  <div>
-    <h1>Welcome to the About page!</h1>
-  </div>
-)
+import { Home, Posts, About } from './components';
 
 class App extends Component {
 

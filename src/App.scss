@@ -60,6 +60,13 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.footer {
+  font-family: $font-family-RobotoSlab;
+  border-bottom: solid 1px grey;
+  border-top: solid 1px grey;
+  text-align: center;
+  font-size: 10pt;
+}
 
 .menu-item {
   border-left: solid 1px grey;
